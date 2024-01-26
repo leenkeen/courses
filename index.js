@@ -45,7 +45,7 @@ const PORT = process.env.PORT || 3000
 
 async function start() {
     try {
-        const url = `mongodb+srv://overbax2015:787898@cluster0.ja66aen.mongodb.net/shop`
+        const url = `mongodb+srv://@cluster0.ja66aen.mongodb.net/shop`
         await mongoose.connect(url)
         const candidate = await User.findOne()
         if (!candidate) {
